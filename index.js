@@ -14,11 +14,11 @@ class Route {
     this.beginningLocation = beginningLocation;
     this.endingLocation = endingLocation;
   }
-  
+
   blocksTravelled (){
     let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
     let vertical = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical);
-    let horizontal = Math.abs(eastWest.indexOf(route.beginningLocation.horizontal) - eastWest.indexOf(route.endingLocation.horizontal));
+    let horizontal = Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal));
     return vertical + horizontal;
   }
 
